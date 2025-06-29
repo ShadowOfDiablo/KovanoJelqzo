@@ -56,6 +56,7 @@ const Components = () => {
             {dropdownStates.furniture && (
               <ul className="dropdown-content">
                 <li onClick={() => setActiveSection('beds')}>Спални от ковано желязо и от метал</li>
+                <li onClick={() => setActiveSection('tables')}>Маси от ковано желязо и от метал</li>
                 <li onClick={() => setActiveSection('lamps')}>Лампи от ковано желязо</li>
                 <li onClick={() => setActiveSection('mirrors')}>Огледала от ковано желязо</li>
               </ul>
@@ -230,6 +231,15 @@ const Components = () => {
           return (
             <div className="content-section beds-section">
               <h2>Спални от ковано желязо и от метал</h2>
+              
+              <div className="beds-hero">
+                <img 
+                  src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/modern-metal-bed-frames.jpg" 
+                  alt="Спални от ковано желязо и от метал"
+                  className="beds-hero-image"
+                />
+              </div>
+              
               <div className="beds-intro">
                 <p>Спалните от ковано желязо са акцента на Вашата спалня. Металните спални и спалните от ковано желязо са уникални със своята здравина и внасят неповторима идентичност на спалнята, като същевременно осигуряват комфорт и сигурност. Предлагаме ви примерен набор от спални от ковано желязо и спални от метал, които не са ковано желязо. Нне изпълняваме вашите желания, като същевременно съчетаваме сигурността, красотата и ефективността, за да ви осигурим най-доброто и да задоволим дори и най-изтънчения вкус!</p>
               </div>
@@ -237,7 +247,7 @@ const Components = () => {
               <div className="beds-grid">
                 <div className="bed-item">
                   <img 
-                    src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/modern-metal-bed-frames.jpg" 
+                    src="http://kovano-jelyazo.bg/wp-content/uploads/2017/10/0ade403d07b857b7279a147cabd334d6-225x300.jpg" 
                     alt="Спалня от ковано желязо - С01"
                     className="bed-image"
                   />
@@ -246,7 +256,7 @@ const Components = () => {
                 
                 <div className="bed-item">
                   <img 
-                    src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/bed-s02.jpg" 
+                    src="http://kovano-jelyazo.bg/wp-content/uploads/2017/10/1cbe00955e04dac5fe9e84b4819eea85-300x225.jpg" 
                     alt="Спалня от ковано желязо - С02"
                     className="bed-image"
                   />
@@ -255,7 +265,7 @@ const Components = () => {
                 
                 <div className="bed-item">
                   <img 
-                    src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/bed-s03.jpg" 
+                    src="http://kovano-jelyazo.bg/wp-content/uploads/2017/10/2-krovati-kovanyie-300x189.jpg" 
                     alt="Спалня от ковано желязо - С03"
                     className="bed-image"
                   />
@@ -264,29 +274,104 @@ const Components = () => {
                 
                 <div className="bed-item">
                   <img 
-                    src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/bed-s04.jpg" 
+                    src="http://kovano-jelyazo.bg/wp-content/uploads/2017/10/7_gr-300x220.jpg" 
                     alt="Спалня от ковано желязо - С04"
                     className="bed-image"
                   />
                   <p className="bed-title">Спалня от ковано желязо – С04</p>
                 </div>
-                
-                <div className="bed-item">
-                  <img 
-                    src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/bed-s05.jpg" 
-                    alt="Спалня от ковано желязо - С05"
-                    className="bed-image"
-                  />
-                  <p className="bed-title">Спалня от ковано желязо – С05</p>
+              </div>
+            </div>
+          );
+
+        case 'tables':
+          return (
+            <div className="content-section tables-section">
+              <h2>Маси от ковано желязо и от метал</h2>
+              
+              <div className="tables-hero">
+                <img 
+                  src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-19.jpg" 
+                  alt="Маси от ковано желязо и от метал"
+                  className="tables-hero-image"
+                />
+              </div>
+              
+              <div className="tables-intro">
+                <p>Масите от ковано желязо са солидни и практически вечни. Наред с това, масите от ковано желязо често се превръщат в основен акцент от интериора на всяко помещение. Вашата маса от ковано желязо може да бъде произведение на изкуството – удобна и красива, тя може да бъде центъра на вашата кухня, трапезария или всекидневна, без непременно да е необходимо да бъде заобиколена от други мебели от ковано желязо.</p>
+              </div>
+              
+              <div className="tables-gallery">
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-1-400x284.jpg" alt="Маса ковано желязо (1)" />
+                  <h3>Маса ковано желязо (1) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса от ковано желязо (1) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
                 </div>
                 
-                <div className="bed-item">
-                  <img 
-                    src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/bed-s06.jpg" 
-                    alt="Спалня от ковано желязо - С06"
-                    className="bed-image"
-                  />
-                  <p className="bed-title">Спалня от ковано желязо – С06</p>
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-31.jpg" alt="Маса ковано желязо (2)" />
+                  <h3>Маса ковано желязо (2) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса от ковано желязо (2) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
+                </div>
+                
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-34-400x284.jpg" alt="Маса ковано желязо (3)" />
+                  <h3>Маса ковано желязо (3) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса от ковано желязо (3) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
+                </div>
+                
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-11-400x284.jpg" alt="Маса ковано желязо (4)" />
+                  <h3>Маса ковано желязо (4) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса от ковано желязо (4) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
+                </div>
+                
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-20.jpg" alt="Маса ковано желязо (5)" />
+                  <h3>Маса ковано желязо (5) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса от ковано желязо (5) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
+                </div>
+                
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-33-400x284.jpg" alt="Маса ковано желязо (6)" />
+                  <h3>Маса ковано желязо (6) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса от ковано желязо (6) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
+                </div>
+                
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-5-400x284.jpg" alt="Маса ковано желязо (7)" />
+                  <h3>Маса ковано желязо (7) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса от ковано желязо (7) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
+                </div>
+                
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-6-400x284.jpg" alt="Маса ковано желязо (8)" />
+                  <h3>Маса ковано желязо (8) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса от ковано желязо (8) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
+                </div>
+                
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-7-400x284.jpg" alt="Маса ковано желязо (9)" />
+                  <h3>Маса ковано желязо (9) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса от ковано желязо (9) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
+                </div>
+                
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-8-400x284.jpg" alt="Маса ковано желязо (10)" />
+                  <h3>Маса ковано желязо (10) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса от ковано желязо (10) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
+                </div>
+                
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-32-400x284.jpg" alt="Маса ковано желязо (11)" />
+                  <h3>Маса ковано желязо (11) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса от ковано желязо (11) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
+                </div>
+                
+                <div className="table-item">
+                  <img src="http://kovano-jelyazo.bg/wp-content/uploads/2017/06/Маси-28-400x284.jpg" alt="Маса от ковано желязо (12)" />
+                  <h3>Маса от ковано желязо (12) – Ковано желязо мебели – КоВаНа МАГИЯ</h3>
+                  <p>Маса ковано желязо (12) – Ковано желязо мебели – КоВаНа МАГИЯ</p>
                 </div>
               </div>
             </div>
